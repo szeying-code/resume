@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Choong Sze Ying – Data Science &amp; Pricing Analytics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f4;--panel:#12303a;--panel-ink:#e8f0f2;--panel-mute:#9bb5bc;--ink:#14232a;--mute:#52656c;--line:#cdd8dc;--accent:#c98a0b;--chip:#dde7ea;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1a20;--panel:#091317;--panel-ink:#e8f0f2;--panel-mute:#8aa5ad;--ink:#e3ecef;--mute:#9db1b8;--line:#25383f;--accent:#f0b84a;--chip:#17292f;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0d1a20;--panel:#09131a;--panel-ink:#e8f0f2;--panel-mute:#8aa5ad;--ink:#e3ecef;--mute:#9db1b8;--line:#25383f;--accent:#f0b84a;--chip:#17292f;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 "Instrument Sans",system-ui,sans-serif}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{display:grid;grid-template-columns:340px 1fr;max-width:1160px;margin:0 auto;min-height:100vh}
+aside{background:var(--panel);color:var(--panel-ink);padding:48px 32px;position:sticky;top:0;align-self:start;height:100vh;overflow-y:auto}
+.globe{width:132px;height:132px;display:block;margin-bottom:28px}
+.globe *{fill:none;stroke:var(--accent);stroke-width:1.2}
+.globe .dot{fill:var(--accent);stroke:none}
+h1{font:600 2.1rem/1.1 Newsreader,Georgia,serif;margin:0 0 8px}
+.role{color:var(--panel-mute);margin:0 0 28px;font-size:.95rem}
+aside h2{font:600 .95rem Newsreader,Georgia,serif;color:var(--accent);margin:28px 0 8px}
+aside ul{list-style:none;padding:0;margin:0;font-size:.92rem}
+aside li{margin:0 0 6px}
+aside small{color:var(--panel-mute);display:block}
+.contact a{text-decoration:none;border-bottom:1px solid var(--panel-mute)}
+button.theme{margin-top:32px;background:none;border:1px solid var(--panel-mute);color:var(--panel-ink);border-radius:999px;padding:6px 14px;font:inherit;font-size:.85rem;cursor:pointer}
+main{padding:56px 48px 72px}
+section{margin-bottom:52px}
+main h2{font:600 1.5rem Newsreader,Georgia,serif;margin:0 0 20px;padding-bottom:8px;border-bottom:1px solid var(--line)}
+.lede{font:400 1.3rem/1.55 Newsreader,Georgia,serif;max-width:62ch;margin:0}
+.job{margin-bottom:34px}
+.job h3{font:600 1.15rem Newsreader,Georgia,serif;margin:0}
+.where{color:var(--mute);margin:0 0 4px;font-size:.95rem}
+.when{color:var(--accent);font-weight:600;font-size:.9rem;margin:0 0 10px}
+.job ul{margin:0 0 12px;padding-left:1.1rem;max-width:72ch}
+.job li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:0;margin:0;list-style:none}
+.chips li{background:var(--chip);padding:3px 10px;border-radius:6px;font-size:.85rem}
+.skills dt{font-weight:600;margin-top:14px}
+.skills dd{margin:4px 0 0;color:var(--mute)}
+.mods{color:var(--mute);margin:0 0 10px}
+@media (max-width:860px){.wrap{display:block}aside{position:static;height:auto;padding:36px 24px}main{padding:36px 24px 56px}}
+@media print{aside{position:static;height:auto}button.theme{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<aside>
+  <svg class="globe" viewBox="0 0 132 132" role="img" aria-label="Globe of latitude and longitude lines, a nod to my spherical modelling research">
+    <circle cx="66" cy="66" r="60"/><ellipse cx="66" cy="66" rx="60" ry="22"/><ellipse cx="66" cy="66" rx="60" ry="42" opacity=".6"/>
+    <ellipse cx="66" cy="66" rx="22" ry="60"/><ellipse cx="66" cy="66" rx="42" ry="60" opacity=".6"/>
+    <circle class="dot" cx="94" cy="40" r="4"/>
+  </svg>
+  <h1>Choong Sze Ying</h1>
+  <p class="role">Data scientist with an actuarial pricing background</p>
+
+  <h2>Contact</h2>
+  <ul class="contact">
+    <li><a href="mailto:choongszeying@gmail.com">choongszeying@gmail.com</a></li>
+    <li><a href="https://www.linkedin.com/in/szeying1122" rel="noopener">linkedin.com/in/szeying1122</a></li>
+  </ul>
+
+  <h2>Languages</h2>
+  <ul><li>English and Mandarin <small>speaking and writing</small></li><li>Malay and Cantonese</li></ul>
+
+  <h2>Certificates and honours</h2>
+  <ul>
+    <li>SAS Programming 9.4 (LinkedIn)</li>
+    <li>CB1 and CS1 exemptions, Institute and Faculty of Actuaries</li>
+    <li>Jeffrey Cheah ACE Scholarship, 2020–2023</li>
+    <li>Top 15% of students in WACE, 2019</li>
+    <li>Overall best student, Form 4, 2017</li>
+  </ul>
+  <button class="theme" id="theme" type="button">Switch light / dark</button>
+</aside>
+
+<main>
+<section>
+  <p class="lede">MSc Data Science candidate at the University of Nottingham, with two years of general insurance product pricing behind me. I work in Python, SAS and Excel on data preprocessing, statistical modelling, machine learning and automation. I'm looking for roles in data analytics, data science, business analytics and risk analytics.</p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+  <div class="job">
+    <h3>Associate Product Pricing</h3>
+    <p class="where">Great Eastern General Malaysia, Kuala Lumpur</p>
+    <p class="when">Jun 2023 – Aug 2025 · Full-time</p>
+    <ul>
+      <li>Cleaned and structured large insurance datasets (claims, premiums, customer demographics) in SAS and Excel to keep pricing inputs accurate.</li>
+      <li>Automated data validation and checking, such as deviation checks and claim tracking, cutting manual errors by 10% and speeding up regulatory reporting.</li>
+      <li>Automated recurring monthly regulatory reports with Excel VBA, saving over an hour per reporting cycle.</li>
+      <li>Ran post-launch analyses of model performance and claims trends to refine future pricing.</li>
+      <li>Worked with underwriting and finance to turn data insights into premium adjustments and product enhancements.</li>
+      <li>Prepared executive presentations and BNM reports, turning complex actuarial concepts into trend charts and portfolio risk views.</li>
+      <li>Spotted data anomalies and unusual claims patterns through exploratory analysis.</li>
+      <li>Built dynamic Excel dashboards to track product profitability and portfolio performance, including an experience study on PA and health products.</li>
+    </ul>
+    <ul class="chips"><li>SAS</li><li>Python</li><li>Advanced Excel</li><li>Excel VBA</li><li>Statistical modelling</li><li>Regression</li><li>Data visualisation</li><li>Regulatory compliance</li><li>Stakeholder management</li></ul>
+  </div>
+  <div class="job">
+    <h3>Actuarial Industrial Training, Actuarial Servicing</h3>
+    <p class="where">Prudential Assurance Malaysia Berhad, Kuala Lumpur · Reinsurance Department</p>
+    <p class="when">Dec 2022 – Mar 2023 · Internship</p>
+    <ul>
+      <li>Investigated data queries from reinsurers using data checking and problem solving.</li>
+      <li>Checked exposure for agency trips to keep risks within catastrophe limits.</li>
+      <li>Built an Excel template for reinsurance premium calculations for two new products.</li>
+      <li>Took part in user acceptance testing and data validation.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="job">
+    <h3>MSc Data Science</h3>
+    <p class="where">University of Nottingham, United Kingdom</p>
+    <p class="when">Sep 2025 – Sep 2026</p>
+    <p class="mods">Selected modules: Statistical Modelling (86%), Machine Learning (74%), Time Series and Forecasting (74%), Data Visualisation (65%), Databases, Interfaces and Software (64%), Programming (63%).</p>
+    <p><strong>Research project:</strong> physics-informed and geometry-aware machine learning for scalar-field reconstruction and uncertainty quantification on a sphere.</p>
+    <ul>
+      <li>Built a Python spherical harmonic modelling framework to reconstruct global temperature data.</li>
+      <li>Studied model accuracy, prediction uncertainty and where predictions are hardest across the globe.</li>
+      <li>Implemented adaptive geodesic conformal prediction to quantify spatially varying uncertainty.</li>
+      <li>Tested robustness across spherical harmonic degrees and hyperparameter settings, and analysed reconstruction errors.</li>
+    </ul>
+  </div>
+  <div class="job">
+    <h3>Bachelor of Actuarial Studies</h3>
+    <p class="where">Sunway University, Selangor · CGPA 3.2</p>
+    <p class="when">Mar 2020 – Mar 2023</p>
+    <p class="mods">Python programming, R for statistics, probability and statistics, machine learning basics, regression analysis, statistical modelling.</p>
+  </div>
+  <div class="job">
+    <h3>Australian Matriculation</h3>
+    <p class="where">Sunway College, Selangor · ATAR 89.5%</p>
+    <p class="when">Mar 2019 – Dec 2019</p>
+  </div>
+  <div class="job">
+    <h3>Sijil Pelajaran Malaysia (SPM)</h3>
+    <p class="where">Wesley Methodist School Ipoh, Perak · Science stream, 8A 2B</p>
+    <p class="when">Jan 2014 – Dec 2018</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical skills</h2>
+  <dl class="skills">
+    <dt>Programming and data</dt><dd>Python, R, SAS, Excel VBA, SQL and database fundamentals</dd>
+    <dt>Data science and statistics</dt><dd>Machine learning, statistical modelling, regression, time series, predictive analytics, data preprocessing, uncertainty quantification</dd>
+    <dt>Visualisation</dt><dd>Matplotlib, Seaborn, Excel dashboards</dd>
+    <dt>Reporting</dt><dd>Microsoft Excel, Word and PowerPoint, data reporting, technical documentation</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Activities</h2>
+  <div class="job">
+    <h3>Design Department Executive Committee</h3>
+    <p class="where">Sunway Project for Asian and International Relations</p>
+    <p class="when">Mar 2022 – Mar 2023</p>
+    <ul><li>Handled public relations, poster design, promotion and marketing.</li></ul>
+  </div>
+  <div class="job">
+    <h3>Programme Executive Committee</h3>
+    <p class="where">Sunway Buddhist Society</p>
+    <p class="when">Mar 2021 – Mar 2023</p>
+    <ul><li>Organised club gatherings, was the contact between guest speakers and the society, and wrote event proposals and reports.</li></ul>
+  </div>
+  <div class="job">
+    <h3>Vice President</h3>
+    <p class="where">Wesley Methodist Netball Club</p>
+    <p class="when">Jan 2017 – Jul 2018</p>
+    <ul><li>Led the team into the MSSD competition and planned its training routine.</li></ul>
+  </div>
+</section>
+</main>
+</div>
+<script>
+document.getElementById("theme").addEventListener("click",function(){
+  var r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
+  r.dataset.theme=dark?"light":"dark";
+});
+</script>
+</body>
+</html>
